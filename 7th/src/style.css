@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.draw {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+
+#hehe {
+  position: absolute; /* Position relative to the viewport */
+  top: 20px; /* Adjust the vertical position */
+  left: 20px; /* Adjust the horizontal position */
+  z-index: 10; /* Ensure the button is above the canvas */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border: 1px solid #000; /* Border for visibility */
+  padding: 10px; /* Padding for better touch target */
+  cursor: pointer; /* Change cursor to pointer */
+  touch-action: manipulation; /* Ensure touch events are recognized */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #hehe {
+    top: 10px; /* Adjust for smaller screens */
+    left: 10px; /* Adjust for smaller screens */
+    padding: 8px; /* Smaller padding */
+  }
+}
