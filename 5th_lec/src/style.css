@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+}
+.draw {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
